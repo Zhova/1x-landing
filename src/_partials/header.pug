@@ -1,0 +1,23 @@
+mixin header
+	+b.HEADER.header.wrap
+		+b.header-container.container
+			+b.header-logo
+				a(href="/")
+					img(src="./img/logo.png", alt="")
+			+b.NAV.header-nav
+				+b.UL.nav-list
+					+e.LI.item 
+						a(href="#") Преимущества
+					+e.LI.item 
+						a(href="#") Безопасность
+					+e.LI.item 
+						a(href="#") Возможности
+					+e.LI.item 
+						a(href="#") Контакты
+		
+			+b.lang RU
+			+b.A.btn_default._small.header-btn СТАТЬ АГЕНТОМ
+			+b.burger
+				+e.line
+				+e.line
+				+e.line
