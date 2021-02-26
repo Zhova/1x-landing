@@ -30,10 +30,22 @@ ul
 			font-size: 36px
 			line-height: 42px
 			font-weight: 700
+		&-small
+			font-weight: 700
+			font-size: 18px
+			line-height: 21px
+		&-redular
+			font-weight: 700
+			font-size: 30px
+			line-height: 35px
 	&_regular
 		font-weight: 400
 		font-size: 16px
 		line-height: 20px
+	&_small
+		font-weight: 400
+		font-size: 14px
+		line-height: 16px
 	&_dark
 		color: #002E5E
 	&_light
@@ -158,3 +170,42 @@ ul
 	&-sub-title
 		margin-bottom: 30px
 		max-width: 445px
+
+.cashier
+	padding: 115px 0
+	display: flex
+	justify-content: space-between
+	&-wrap
+		background: #F3FAFF
+	&__left,&__right
+		width: 47%
+	&__right
+		display: flex
+		align-items: flex-end
+		justify-content: flex-end
+	&__list
+		&-item
+			background: #fff
+			border-radius: 8px
+			padding: 19px 30px
+			margin-bottom: 20px
+			display: flex
+			align-items: center
+			&:last-child
+				margin-bottom: 0
+			&-icon
+				padding-right: 24px
+				img
+					min-width: 64px
+					max-width: 64px
+			&-text
+				padding-left: 30px
+				border-left: 1px solid #F3FAFF
+			&-title
+				margin-bottom: 10px
+	&__video
+		width: 510px
+		height: 355px
+		box-shadow: -15px 15px 0px 0px rgba(211, 255, 248, 0.6)
+		border-radius: 10px
+		margin-bottom: 15px

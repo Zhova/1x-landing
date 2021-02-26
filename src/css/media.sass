@@ -4,6 +4,8 @@
 
 // =============== tablet 
 @media screen and (max-width: 1199px)
+    .cashier
+        padding: 50px 0
     .container
         max-width: 95%
     .header
@@ -36,8 +38,34 @@
             display: flex
             justify-content: flex-end
 
+    .cashier
+        flex-direction: column
+        &__left,&__right
+            width: 100%
+        &__left
+            margin-bottom: 30px
+        &__right
+            justify-content: center
+        &__video
+            height: 210px
+            width: 310px
+            object-fit: cover
+
 // =============== mobile
 @media screen and (max-width: 767px)
+
+    .text
+        &_title
+            &-main
+                font-size: 25px
+            &-redular
+                font-size: 22px
+        &_regular
+            font-size: 14px
+    .title-default
+        margin-bottom: 40px
+        &::before
+            bottom: -15px
 
     .parallax
         &-block
@@ -52,3 +80,10 @@
         flex-direction: column
         &__left
             margin-bottom: 50px
+    .cashier
+        &__list
+            &-item
+                &-icon
+                    img
+                        min-width: 45px
+                        max-width: 45px
