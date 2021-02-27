@@ -8,6 +8,8 @@ include _partials/header.pug
 include _partials/main_screen.pug
 include _partials/cashier-mob_screen.pug
 include _partials/security_screen.pug
+include _partials/opportunities_screen.pug
+include _partials/contacts_screen.pug
 
 
 //- Футер
@@ -18,8 +20,7 @@ include _partials/footer.pug
 doctype html 
 html
 	head
-		link(rel="shortcut icon" href="img/fav-redpix.png" type="image/png")
-		title title
+		title 1x
 		
 		//- include style.css
 		link(rel="stylesheet" type="text/css" href="css/all_style.css")
@@ -36,6 +37,8 @@ html
 		+main_screen
 		+cashier-mob_screen
 		+security_screen
+		+opportunities_screen
+		+contacts_screen
 		+footer
 
 
@@ -46,6 +49,7 @@ html
 		//- script new WOW().init();
 		//- libs js
 		script(type="text/javascript" src="js/all_libs.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js")
 		//- script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
 		//- js
 		script(type="text/javascript" src="js/all_js.js")

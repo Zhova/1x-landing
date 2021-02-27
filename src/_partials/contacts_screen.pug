@@ -1,0 +1,29 @@
+mixin contacts_screen 
+    +b.contacts-wrap.wrap
+        +b.contacts.container
+            +e.left 
+                +e.info-block
+                    +e.info-item.site
+                        +e.P.info-title.text_regular._light Сайт
+                        +e.A(href="http://1xbet.com/").info-text.text_regular._dark 1xbet.com
+                    +e.info-item.mail
+                        +e.P.info-title.text_regular._light E-mail 
+                        +e.A(href="mailto:retail@1xbet-team.com").info-text.text_regular._dark retail@1xbet-team.com
+                    +e.info-item.skype
+                        +e.P.info-title.text_regular._light Skype
+                        +e.A(href="skype:1xBet Retail?call").info-text.text_regular._dark 1xBet Retail
+                    +e.info-item.phone
+                        +e.P.info-title.text_regular._light Телефон
+                        +e.A(href="tel:+357 96 338132").info-text.text_regular._dark +357 96 338132
+            +e.right
+                +e.form-wrap
+                    +b.P.main-title.title-default.text_title-main._dark Оставить заявку
+                    +e.FORM.form
+                        +e.INPUT(type="text" placeholder="Имя").form-item
+                        +e.INPUT(type="email" placeholder="E-mail").form-item
+                        +e.INPUT(type="tel" placeholder="Телефон").form-item
+                        +e.INPUT(type="text" placeholder="Страна").form-item
+                        +e.INPUT(type="text" placeholder="Город").form-item
+                        +e.INPUT(type="text" placeholder="Адрес размещения терминала").form-item
+                        +b.INPUT(type="submit" value="Отправить").btn_default.btn_big
+                        

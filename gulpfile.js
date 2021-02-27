@@ -28,9 +28,7 @@ const jsFiles = [
 ];
 
 const libs = [
-'./node_modules/parallax-js/dist/parallax.min.js',
 './node_modules/jquery/dist/jquery.min.js',
-'./node_modules/wowjs/dist/wow.min.js'
 ];
 
 const img = [

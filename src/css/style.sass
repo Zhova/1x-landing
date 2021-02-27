@@ -1,6 +1,7 @@
 body
 	max-width: 100%
 	overflow-x: hidden
+
 *, *:after, *:before
 	box-sizing: border-box
 	font-family: 'Roboto'
@@ -63,6 +64,14 @@ ul
 		height: 2px
 		bottom: -25px
 		background: linear-gradient(90.11deg, #7AD9F6 5.63%, #70F6E9 100%)
+	&_center
+		text-align: center
+		&::before
+			left: 50%
+			transform: translateX(-50%)
+.sub-title-default
+	&_center
+		text-align: center
 
 .btn
 	color: #fff
@@ -228,3 +237,114 @@ ul
 		&__main-card
 			left: auto
 			right: 0
+.opportunities
+	padding: 90px 0
+	&-wrap
+		background: #F3FAFF
+	&__text-block
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 80px
+	.main-sub-title
+		max-width: 685px
+	&__block
+		display: flex
+		justify-content: center
+	&__item
+		margin-right: 30px
+		width: 560px
+		&:last-child
+			margin-right: 0
+		&-img
+			background: #E1F2FF
+			height: 260px
+			position: relative
+			border-radius: 10px 10px 0 0
+			.icon
+				position: absolute
+				top: -65px
+				left: 50%
+				transform: translateX(-50%)
+		&-title
+			padding-left: 15px
+			position: relative
+			max-width: 370px
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				height: 100%
+				width: 2px
+				background: linear-gradient(90.11deg, #7AD9F6 5.63%, #70F6E9 100%)
+			&-block
+				background: #FFFFFF
+				padding: 0 47px
+				padding-top: 20px
+				padding-bottom: 30px
+				border-radius: 0 0 10px 10px
+.contacts
+	display: flex
+	justify-content: space-between
+	padding: 85px 0
+	&-wrap
+		background: linear-gradient(98.56deg, #E9F5FF 16.98%, #EFF8FF 86.46%)
+	&__left
+		background: url('../img/contacts-infoBG.png')
+		background-repeat: no-repeat
+		background-position-x: center
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 54%
+	&__form
+		&-wrap
+			background: #FFFFFF
+			border-radius: 10px
+			padding: 45px 40px
+			max-width: 440px
+	&__form-item
+		background: #F3FAFF
+		border-radius: 8px
+		width: 100%
+		height: 46px
+		padding: 14px 18px
+		margin-bottom: 16px
+	input
+		border: 0
+		min-width: 210px
+		&[type="submit"]
+			position: relative
+			margin-top: 10px
+			left: 50%
+			transform: translateX(-50%)
+	&__info
+		&-item
+			margin-bottom: 42px
+			position: relative
+			padding-left: 66px
+			&:last-child
+				margin-bottom: 0
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				width: 46px
+				height: 46px
+				background-repeat: no-repeat !important
+		&-title
+			margin-bottom: 9px
+	.site
+		&::before
+			background: url('../img/site-icon.svg')
+	.mail
+		&::before
+			background: url('../img/mail-icon.svg')
+	.skype
+		&::before
+			background: url('../img/skype-icon.svg')
+	.phone
+		&::before
+			background: url('../img/phone-icon.svg')
